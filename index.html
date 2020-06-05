@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="form form--add">
+        <h1 class="form__title">Dodaj element do HTML</h1>
+        <input
+          type="text"
+          class="form__input"
+          placeholder="element HTML"
+          required
+          name="node"
+        />
+        <input
+          type="text"
+          class="form__input"
+          placeholder="tekst w elemencie"
+          name="text"
+        />
+        <input
+          type="text"
+          class="form__input"
+          placeholder="atrybut"
+          name="attr"
+        />
+        <input
+          type="text"
+          class="form__input"
+          placeholder="wartość atrybutu"
+          name="value"
+        />
+        <button class="form__button">Dodaj element</button>
+      </form>
+      <form class="form form--search">
+        <h1 class="form__title">Przeszukaj DOM</h1>
+        <input
+          type="text"
+          class="form__input"
+          placeholder="nazwa elementu"
+          name="searching-element"
+          required
+        />
+        <input
+          type="submit"
+          class="form__button"
+          value="Znajdź i pokaż informacje"
+        />
+      </form>
+    </div>
+    <div class="result"></div>
+    <div class="content"></div>
+    <footer class="footer">Stopka</footer>
+    <script src="main.js"></script>
+  </body>
+</html>
